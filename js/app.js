@@ -10,6 +10,7 @@ if(question === "yes"){
     var response;
     var score = 0;
 
+    // question 1
     answers.q1 = prompt("Guess if: English is my first language.");
     answers.q1 = answers.q1.toLowerCase();
     if(answers.q1 === "yes"){
@@ -21,6 +22,7 @@ if(question === "yes"){
         response = alert("I asked you a question, please respond.");
     }
     
+    // question 2
     answers.q2 = prompt("Guess if: I have a cat named Lili.");
     answers.q2 = answers.q2.toLowerCase();
     if(answers.q2 === "yes"){
@@ -32,6 +34,7 @@ if(question === "yes"){
         response = alert("I asked you a question, please respond.");
     }
     
+    // question 3
     answers.q3 = prompt("Guess if: Rage games are my favorite type of video games.");
     answers.q3 = answers.q3.toLowerCase();
     if(answers.q3 === "yes"){
@@ -43,6 +46,7 @@ if(question === "yes"){
         response = alert("I asked you a question, please respond.");
     }
     
+    // question 4
     answers.q4 = prompt("Guess if: I use Photoshop as my art program of choice.");
     answers.q4 = answers.q4.toLowerCase();
     if(answers.q4 === "yes"){
@@ -54,6 +58,7 @@ if(question === "yes"){
         response = alert("I asked you a question, please respond.");
     }
     
+    // question 5
     answers.q5 = prompt("Guess if: I have a hard time interacting with others because of my face blindness.");
     answers.q5 = answers.q5.toLowerCase();
     if(answers.q5 === "yes"){
@@ -68,19 +73,29 @@ if(question === "yes"){
     answers.push();
 
     document.write('<p id="answersTitle">',"Your answers:",'</p>',
+
         '<p id="answers">' + "English is my first language. You responded with: " + answers.q1,'<br>'
         + "I have a cat named Lili. You responded with: " + answers.q2,'<br>'
         + "Rage games are my favorite type of video games. You responded with: " + answers.q3,'<br>'
         + "I use Photoshop as my art program of choice. You responded with: " + answers.q4,'<br>'
         + "I have a hard time interacting with others because of face blindness. You responded with: " + answers.q5,'</p>');
+
     document.write('<p id="answersTitle">',"You got " + score + "/5 right." ,'</p>');
 
     if(score === 5){
         document.write('<p id="answersTitle">',"Purrfect!!",'</p>');
     }
 
+
 } else if(question === "no"){
+
     question = alert("Alright, maybe next time.");
+    document.write('<p id="answersTitle">' + "Please refresh the page if you change your mind." + '</p>');
+
 } else {
+
     question = alert("Sorry, I don't recognize that answer.");
+    document.write('<p id="answersTitle">' + "Please refresh the page and reply with yes or no this time." + '</p>');
+
 }
+

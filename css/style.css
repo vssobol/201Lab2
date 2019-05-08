@@ -1,7 +1,7 @@
 
 *{
     background-color: #000321;
-    color: white;
+    color: aliceblue;
     margin: 35px;
 }
 
@@ -15,6 +15,7 @@ h1{
 
 img{
     display: block;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,12 +28,15 @@ img{
 }
 
 #answers{
+    background-color: royalblue;
     text-align: center;
-    min-width: 700px;
-    max-width: 700px;
-    border: medium double white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    min-width: 775px;
+    max-width: 775px;
+    border: medium double aliceblue;
     border-radius: 50px;
-    padding: 10px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
 }
